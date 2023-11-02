@@ -1,0 +1,83 @@
+.find {
+  background: #ffffff;
+  overflow: visible;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .find {
+    background: #fbf9f7;
+  }
+}
+.find__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.find__list > li {
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+@media only screen and (max-width: 992px) {
+  .find__list > li {
+    flex: 1 1 calc(50% - 2rem);
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .find__list > li {
+    justify-content: start;
+    flex: 1 1 100%;
+  }
+}
+.find .nice-select {
+  border: none;
+  font-size: 2.6rem;
+  padding: 0;
+  padding-right: 3rem;
+  color: #909090;
+  background: inherit;
+}
+.find .nice-select::after {
+  content: "";
+  right: 0;
+  background-image: url(../img/icons/select-arrow.svg);
+  width: 1.4rem;
+  height: 0.9rem;
+  background-repeat: no-repeat;
+  border: none;
+  transform: rotate(0);
+  transform-origin: 50% 50% 0;
+  transition: all 0.2s ease;
+}
+.find .nice-select.open::after {
+  transform: rotate(180deg);
+}
+.find .nice-select .list {
+  width: 23rem;
+}
+@media only screen and (min-width: 992px) {
+  .find .nice-select .list {
+    left: unset;
+    right: 0;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .find .nice-select .list {
+    max-width: 100%;
+  }
+}
+.find .nice-select .list li {
+  font-size: 2.2rem;
+  min-height: 4.5rem;
+  font-weight: 400;
+}
+.find .nice-select .list li.selected {
+  font-weight: 500;
+}
+.find__bttn {
+  margin-top: 2.4rem;
+}

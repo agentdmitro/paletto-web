@@ -1,0 +1,16 @@
+.new__wrap {
+  margin-top: 9rem;
+}
+@media only screen and (max-width: 992px) {
+  .new__wrap {
+    margin-top: 3rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .new__wrap .product__item:last-child {
+    width: 100%;
+  }
+  .new__wrap .product__item:last-child img {
+    max-height: 45rem;
+  }
+}

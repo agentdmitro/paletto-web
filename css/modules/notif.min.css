@@ -1,0 +1,60 @@
+.notif {
+  z-index: 6;
+}
+.notif__product {
+  padding: 1.65rem;
+  position: sticky;
+  z-index: 6;
+  background: #ffffff;
+}
+@media only screen and (max-width: 576px) {
+  .notif__product {
+    display: none;
+  }
+}
+.notif__product .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.notif__product h6 {
+  width: 20rem;
+  max-width: 100%;
+}
+.notif__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #050505;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  height: 4rem;
+  color: #ffffff;
+}
+.notif__wrap a {
+  text-decoration: underline;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-weight: 400;
+  transition: all 0.2s ease;
+}
+@media only screen and (max-width: 576px) {
+  .notif__wrap a {
+    display: flex;
+  }
+}
+.notif__wrap a:hover {
+  color: #4b4a49;
+}
+@media only screen and (max-width: 576px) {
+  .notif__wrap {
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .notif__wrap {
+    height: auto;
+  }
+}

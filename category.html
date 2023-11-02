@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Paletto</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.2.1/css/intlTelInput.css"
+		integrity="sha512-s51TDsIcMqlh1YdQbF3Vj4StcU/5s97VyLEEpkPWwP0CJfjZ/C5zAaHnG+DZroGDn1UagQezDEy61jP4yoi4vQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://fonts.cdnfonts.com/css/product-sans-infanity" rel="stylesheet">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+		integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/libs/swiper.min.css">
+	<link rel="Shortcut Icon" type="image/x-icon" href="img/general/favicon.svg" />
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+	<div class="notif">
+		<div class="notif__wrap">
+			<div class="container">
+				<a href="#">Відкрийте для себе наші сонцезахисні засоби для обличчя та тіла з новим формулюванням SPF
+					50</a>
+			</div>
+		</div>
+	</div>
+
+	<header class="header autoHide">
+		<div class="container">
+			<div class="header__col header__col-left">
+				<button class="header__burger"><span></span></button>
+			</div>
+
+			<nav class="header__menu">
+				<ul class="header__menu-list">
+					<li class="menu-item"><a href="category.html">Товари</a></li>
+					<li class="menu-item"><a href="category.html">Діагностика</a></li>
+					<li class="menu-item"><a href="category.html">Про нас</a></li>
+				</ul>
+			</nav>
+
+			<a href="/" class="header__logo"><img src="img/general/logo.svg" alt="logo"></a>
+
+			<nav class="header__user" data-da=".header__col-right, 768, 1">
+				<ul>
+					<li class="header__search">
+						<a href="search.html" data-da=".header__col-left, 768, 2">
+							<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
+								fill="none">
+								<path
+									d="M6.87874 13.684C8.39687 13.6837 9.87125 13.1755 11.0671 12.2403L14.827 16L16.0364 14.7907L12.2765 11.031C13.2122 9.83508 13.7208 8.36043 13.7211 6.84199C13.7211 3.06949 10.6515 0 6.87874 0C3.10603 0 0.036377 3.06949 0.036377 6.84199C0.036377 10.6145 3.10603 13.684 6.87874 13.684ZM6.87874 1.7105C9.70891 1.7105 12.0105 4.01197 12.0105 6.84199C12.0105 9.67201 9.70891 11.9735 6.87874 11.9735C4.04857 11.9735 1.74697 9.67201 1.74697 6.84199C1.74697 4.01197 4.04857 1.7105 6.87874 1.7105Z"
+									fill="#050505" />
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="login.html"><span>Логін</span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
+								fill="none">
+								<path
+									d="M4.22714 0.636353C1.96814 0.636353 0.13623 2.46636 0.13623 4.72415C0.13623 6.54673 0.85214 10.8724 7.89914 15.2451C8.02537 15.3226 8.17029 15.3636 8.31805 15.3636C8.46581 15.3636 8.61073 15.3226 8.73696 15.2451C15.784 10.8724 16.4999 6.54673 16.4999 4.72415C16.4999 2.46636 14.668 0.636353 12.409 0.636353C10.15 0.636353 8.31805 3.11381 8.31805 3.11381C8.31805 3.11381 6.48614 0.636353 4.22714 0.636353Z"
+									fill="#050505" />
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="header__cart"><span>Корзина</span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+								fill="none">
+								<g clip-path="url(#clip0_244_3470)">
+									<path
+										d="M6.33301 15C5.41634 15 4.67467 15.75 4.67467 16.6667C4.67467 17.5833 5.41634 18.3333 6.33301 18.3333C7.24967 18.3333 7.99967 17.5833 7.99967 16.6667C7.99967 15.75 7.24967 15 6.33301 15ZM1.33301 1.66666V3.33332H2.99967L5.99967 9.65832L4.87467 11.7C4.74134 11.9333 4.66634 12.2083 4.66634 12.5C4.66634 13.4167 5.41634 14.1667 6.33301 14.1667H16.333V12.5H6.68301C6.56634 12.5 6.47467 12.4083 6.47467 12.2917L6.49967 12.1917L7.24967 10.8333H13.458C14.083 10.8333 14.633 10.4917 14.9163 9.97499L17.8997 4.56666C17.9663 4.44999 17.9997 4.30832 17.9997 4.16666C17.9997 3.70832 17.6247 3.33332 17.1663 3.33332H4.84134L4.05801 1.66666H1.33301ZM14.6663 15C13.7497 15 13.008 15.75 13.008 16.6667C13.008 17.5833 13.7497 18.3333 14.6663 18.3333C15.583 18.3333 16.333 17.5833 16.333 16.6667C16.333 15.75 15.583 15 14.6663 15Z"
+										fill="#050505" />
+								</g>
+								<defs>
+									<clipPath id="clip0_244_3470">
+										<rect width="20" height="20" fill="white" transform="translate(0.499756)" />
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header__col header__col-right"></div>
+		</div>
+	</header>
+
+
+
+	<main class="main">
+
+<section class="banner banner-2" id="banner">
+	<div class="container">
+		<div class="banner__wrap">
+			<div class="breadcrumbs"><a href="#">Головна</a> <span>/</span> <span class="current">Бестселери</span>
+			</div>
+			<h1 class="title--category">Бестеселери</h1>
+		</div>
+	</div>
+	<div class="banner__bg" style="background-image: url('../img/cover/front/2.png');"></div>
+</section>
+
+<section class="category__products" id="category-products">
+    <div class="container">
+        <div class="best__wrap products__wrap products__wrap-category">
+            <!-- prettier-ignore -->
+            <div class="category__products-descr">
+                <p>Найулюбленіший догляд за обличчям, тілом, руками та волоссям наших клієнтів. Як і всі продукти
+                    Paletto, ці бестселери були розроблені без подразнюючих
+                    парабенів, феноксіетанолу, парафінової олії та сульфатів.</p>
+            </div>
+            <a href="product.html" class="product__item">
+    <div class="product__item-img">
+        <img src=img/products/0.png alt="product image">
+    </div>
+    <h6 class="product__item-title"><span>title</span> —
+        <span class="price">from 29,50 €</span>
+    </h6>
+</a>
+            <a href="product.html" class="product__item">
+    <div class="product__item-img">
+        <img src=img/products/1.png alt="product image">
+    </div>
+    <h6 class="product__item-title"><span>title 2</span> —
+        <span class="price">from 29,50 €</span>
+    </h6>
+</a>
+            <a href="product.html" class="product__item">
+    <div class="product__item-img">
+        <img src=img/products/9.png alt="product image">
+    </div>
+    <h6 class="product__item-title"><span>title Hydrolate</span> —
+        <span class="price">from 29,50 €</span>
+    </h6>
+</a>
+            <a href="product.html" class="product__item">
+    <div class="product__item-img">
+        <img src=img/products/3.png alt="product image">
+    </div>
+    <h6 class="product__item-title"><span>title 4</span> —
+        <span class="price">from 29,50 €</span>
+    </h6>
+</a>
+            <a href="product.html" class="product__item">
+    <div class="product__item-img">
+        <img src=img/products/4.png alt="product image">
+    </div>
+    <h6 class="product__item-title"><span>title 5</span> —
+        <span class="price">from 29,50 €</span>
+    </h6>
+</a>
+
+            <a href="single-blog.html" class="category__products-blog category__blog">
+                <div class="category__blog-img"><img src="img/category/blog.png" alt="category blog image"></div>
+                <div class="category__blog-content">
+                    <h5>Три кроки до сяючої шкіри</h5>
+                    <div class="products__more">Тут</div>
+                </div>
+            </a>
+        </div>
+        <div class="category__wrap ">
+            <a href="product.html" class="product__item">
+    <div class="product__item-img">
+        <img src=img/products/0.png alt="product image">
+    </div>
+    <h6 class="product__item-title"><span>title</span> —
+        <span class="price">from 29,50 €</span>
+    </h6>
+</a>
+            <a href="product.html" class="product__item">
+    <div class="product__item-img">
+        <img src=img/products/1.png alt="product image">
+    </div>
+    <h6 class="product__item-title"><span>title 2</span> —
+        <span class="price">from 29,50 €</span>
+    </h6>
+</a>
+            <a href="product.html" class="product__item">
+    <div class="product__item-img">
+        <img src=img/products/9.png alt="product image">
+    </div>
+    <h6 class="product__item-title"><span>title Hydrolate</span> —
+        <span class="price">from 29,50 €</span>
+    </h6>
+</a>
+            <a href="product.html" class="product__item">
+    <div class="product__item-img">
+        <img src=img/products/3.png alt="product image">
+    </div>
+    <h6 class="product__item-title"><span>title 4</span> —
+        <span class="price">from 29,50 €</span>
+    </h6>
+</a>
+            <a href="product.html" class="product__item">
+    <div class="product__item-img">
+        <img src=img/products/4.png alt="product image">
+    </div>
+    <h6 class="product__item-title"><span>title 5</span> —
+        <span class="price">from 29,50 €</span>
+    </h6>
+</a>
+            <a href="product.html" class="product__item">
+    <div class="product__item-img">
+        <img src=img/products/0.png alt="product image">
+    </div>
+    <h6 class="product__item-title"><span>title</span> —
+        <span class="price">from 29,50 €</span>
+    </h6>
+</a>
+            <a href="product.html" class="product__item">
+    <div class="product__item-img">
+        <img src=img/products/1.png alt="product image">
+    </div>
+    <h6 class="product__item-title"><span>title 2</span> —
+        <span class="price">from 29,50 €</span>
+    </h6>
+</a>
+            <a href="product.html" class="product__item">
+    <div class="product__item-img">
+        <img src=img/products/9.png alt="product image">
+    </div>
+    <h6 class="product__item-title"><span>title Hydrolate</span> —
+        <span class="price">from 29,50 €</span>
+    </h6>
+</a>
+            <a href="product.html" class="product__item">
+    <div class="product__item-img">
+        <img src=img/products/3.png alt="product image">
+    </div>
+    <h6 class="product__item-title"><span>title 4</span> —
+        <span class="price">from 29,50 €</span>
+    </h6>
+</a>
+            <a href="product.html" class="product__item">
+    <div class="product__item-img">
+        <img src=img/products/4.png alt="product image">
+    </div>
+    <h6 class="product__item-title"><span>title 5</span> —
+        <span class="price">from 29,50 €</span>
+    </h6>
+</a>
+        </div>
+        <div class="category__bttn">
+            <a href="#" class=" bttn bttn--load">Показати 20 <svg xmlns="http://www.w3.org/2000/svg" width="32"
+                    height="32" viewBox="0 0 32 32" fill="none">
+                    <path
+                        d="M15.9998 29.3334C23.2278 29.3334 29.3332 23.2281 29.3332 16.0001H26.6665C26.6665 21.7827 21.7825 26.6667 15.9998 26.6667C10.2172 26.6667 5.33317 21.7827 5.33317 16.0001C5.33317 10.2187 10.2172 5.33341 15.9998 5.33341V2.66675C8.77184 2.66675 2.6665 8.77341 2.6665 16.0001C2.6665 23.2281 8.77184 29.3334 15.9998 29.3334Z"
+                        fill="white" />
+                </svg></a>
+        </div>
+
+    </div>
+</section>
+
+
+</main>
+
+<div class="cart">
+	<div class="cart__bg"></div>
+	<div class="cart__wrap">
+		<div class="cart__close">
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="32" viewBox="0 0 16 32" fill="none">
+				<path d="M1.77747 21.0912L13.0912 9.77747L14.2226 10.9088L2.90884 22.2226L1.77747 21.0912Z"
+					fill="white" />
+				<path d="M2.90884 9.77747L14.2226 21.0912L13.0912 22.2226L1.77747 10.9088L2.90884 9.77747Z"
+					fill="white" />
+			</svg>
+		</div>
+		<aside class="cart__sidebar">
+			<h5>Корзина</h5>
+			<div class="cart__sidebar-wrap">
+				<div class="cart__product">
+					<div class="cart__product-summary">
+						<a href="#" class="cart__product-img"><img src="img/products/1.png" alt="image title"></a>
+						<div class="cart__product-content">
+							<a href="#">
+								<h6>Nourishing moisturiser — 50 ml 1% Hyaluronic Acid + Shea Butter</h6>
+							</a>
+							<div class="cart__product-count">
+								<select>
+									<option data-display="К-сть 1">К-сть 1</option>
+									<option value="1">1 Option</option>
+									<option value="2">2 Option</option>
+									<option value="3">3 Option</option>
+									<option value="4">4 Option</option>
+								</select>
+							</div>
+						</div>
+
+					</div>
+					<div class="cart__product-price">23,50 €</div>
+					<div class="cart__product-remove">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="32" viewBox="0 0 16 32" fill="none">
+							<path d="M1.77747 21.0912L13.0912 9.77747L14.2226 10.9088L2.90884 22.2226L1.77747 21.0912Z"
+								fill="black" />
+							<path d="M2.90884 9.77747L14.2226 21.0912L13.0912 22.2226L1.77747 10.9088L2.90884 9.77747Z"
+								fill="black" />
+						</svg>
+					</div>
+				</div>
+				<div class="cart__product">
+					<div class="cart__product-summary">
+						<a href="#" class="cart__product-img"><img src="img/products/1.png" alt="image title"></a>
+						<div class="cart__product-content">
+							<a href="#">
+								<h6>Nourishing moisturiser — 50 ml 1% Hyaluronic Acid + Shea Butter</h6>
+							</a>
+							<div class="cart__product-count">
+								<select>
+									<option data-display="К-сть 1">К-сть 1</option>
+									<option value="1">1 Option</option>
+									<option value="2">2 Option</option>
+									<option value="3">3 Option</option>
+									<option value="4">4 Option</option>
+								</select>
+							</div>
+						</div>
+
+					</div>
+					<div class="cart__product-price">23,50 €</div>
+					<div class="cart__product-remove">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="32" viewBox="0 0 16 32" fill="none">
+							<path d="M1.77747 21.0912L13.0912 9.77747L14.2226 10.9088L2.90884 22.2226L1.77747 21.0912Z"
+								fill="black" />
+							<path d="M2.90884 9.77747L14.2226 21.0912L13.0912 22.2226L1.77747 10.9088L2.90884 9.77747Z"
+								fill="black" />
+						</svg>
+					</div>
+				</div>
+				<div class="cart__product">
+					<div class="cart__product-summary">
+						<a href="#" class="cart__product-img"><img src="img/products/1.png" alt="image title"></a>
+						<div class="cart__product-content">
+							<a href="#">
+								<h6>Nourishing moisturiser — 50 ml 1% Hyaluronic Acid + Shea Butter</h6>
+							</a>
+							<div class="cart__product-count">
+								<select>
+									<option data-display="К-сть 1">К-сть 1</option>
+									<option value="1">1 Option</option>
+									<option value="2">2 Option</option>
+									<option value="3">3 Option</option>
+									<option value="4">4 Option</option>
+								</select>
+							</div>
+						</div>
+
+					</div>
+					<div class="cart__product-price">23,50 €</div>
+					<div class="cart__product-remove">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="32" viewBox="0 0 16 32" fill="none">
+							<path d="M1.77747 21.0912L13.0912 9.77747L14.2226 10.9088L2.90884 22.2226L1.77747 21.0912Z"
+								fill="black" />
+							<path d="M2.90884 9.77747L14.2226 21.0912L13.0912 22.2226L1.77747 10.9088L2.90884 9.77747Z"
+								fill="black" />
+						</svg>
+					</div>
+				</div>
+				<div class="cart__product">
+					<div class="cart__product-summary">
+						<a href="#" class="cart__product-img"><img src="img/products/1.png" alt="image title"></a>
+						<div class="cart__product-content">
+							<a href="#">
+								<h6>Nourishing moisturiser — 50 ml 1% Hyaluronic Acid + Shea Butter</h6>
+							</a>
+							<div class="cart__product-count">
+								<select>
+									<option data-display="К-сть 1">К-сть 1</option>
+									<option value="1">1 Option</option>
+									<option value="2">2 Option</option>
+									<option value="3">3 Option</option>
+									<option value="4">4 Option</option>
+								</select>
+							</div>
+						</div>
+
+					</div>
+					<div class="cart__product-price">23,50 €</div>
+					<div class="cart__product-remove">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="32" viewBox="0 0 16 32" fill="none">
+							<path d="M1.77747 21.0912L13.0912 9.77747L14.2226 10.9088L2.90884 22.2226L1.77747 21.0912Z"
+								fill="black" />
+							<path d="M2.90884 9.77747L14.2226 21.0912L13.0912 22.2226L1.77747 10.9088L2.90884 9.77747Z"
+								fill="black" />
+						</svg>
+					</div>
+				</div>
+				<div class="cart__product">
+					<div class="cart__product-summary">
+						<a href="#" class="cart__product-img"><img src="img/products/1.png" alt="image title"></a>
+						<div class="cart__product-content">
+							<a href="#">
+								<h6>Nourishing moisturiser — 50 ml 1% Hyaluronic Acid + Shea Butter</h6>
+							</a>
+							<div class="cart__product-count">
+								<select>
+									<option data-display="К-сть 1">К-сть 1</option>
+									<option value="1">1 Option</option>
+									<option value="2">2 Option</option>
+									<option value="3">3 Option</option>
+									<option value="4">4 Option</option>
+								</select>
+							</div>
+						</div>
+
+					</div>
+					<div class="cart__product-price">23,50 €</div>
+					<div class="cart__product-remove">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="32" viewBox="0 0 16 32" fill="none">
+							<path d="M1.77747 21.0912L13.0912 9.77747L14.2226 10.9088L2.90884 22.2226L1.77747 21.0912Z"
+								fill="black" />
+							<path d="M2.90884 9.77747L14.2226 21.0912L13.0912 22.2226L1.77747 10.9088L2.90884 9.77747Z"
+								fill="black" />
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="cart__total">
+				<div class="cart__total-header">
+					<p>Товар (1)</p>
+					<p>23,50 €</p>
+				</div>
+				<a href="checkout.html" class="cart__bttn bttn">Замовити — 29,40 €</a>
+			</div>
+		</aside>
+	</div>
+</div>
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer__header">
+			<h5 class="footer__title">Ми досліджуємо правильні інгредієнти для кожного типу шкіри. Наші формули прості,
+				концентровані та
+				виготовлені у Франції.</h5>
+		</div>
+		<div class="footer__user">
+			<nav class="footer__menu">
+				<div class="footer__menu-item">
+					<h6 class="footer__menu-title">Допомога</h6>
+					<ul>
+						<li><a href="#">Доставка та повернення</a></li>
+						<li><a href="#">Політика конфіденційності</a></li>
+					</ul>
+				</div>
+				<div class="footer__menu-info">
+					<ul>
+						<li>
+							<h6><img src="img/icons/delivery.svg" alt="delivery">Безкоштовна доставка від 50€</h6>
+						</li>
+						<li>
+							<h6><img src="img/icons/gift.svg" alt="delivery">Подарунки від 75€</h6>
+						</li>
+						<li>
+							<h6><img src="img/icons/delivery.svg" alt="delivery">Відправлення з Франції</h6>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="footer__form">
+				<h6 class="footer__form-title">Розсилка</h6>
+				<form action="#">
+					<input type="mail" required placeholder="Введіть Email">
+					<button><img src="img/icons/more.svg" alt="Submit form"></button>
+				</form>
+				<p>Так, я хочу отримувати розсилку від Paletto та розумію, що мої дані не будуть передані третім
+					особам.</p>
+			</div>
+		</div>
+		<div class="footer__info">
+			<div class="footer__info-content">
+				<p>Продукти Paletto не містять парабенів, феноксіетанолу, парафінової олії та сульфатів.</p>
+				<p>Ознайомтеся з нашим повним чорним списком інгредієнтів тут</p>
+				<a href="#">Слідкуйте за PaletTo <img src="img/icons/instagram.svg" alt="instagram"></a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+<script src="js/libs/jquery-3.7.0.min.js"></script>
+<script src="js/libs/gsap.js"></script>
+<script src="js/libs/ScrollMagic.js"></script>
+<script src="js/libs/ScrollTrigger.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"
+	integrity="sha512-NqYds8su6jivy1/WLoW8x1tZMRD7/1ZfhWG/jcRQLOzV1k1rIODCpMgoBnar5QXshKJGV7vi0LXLNXPoFsM5Zg=="
+	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script type="module" src="js/app.js"></script>
+
+
+</body>
+
+</html>

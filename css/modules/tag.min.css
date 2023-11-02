@@ -1,0 +1,30 @@
+.tag__header-title {
+  color: #909090;
+  float: left;
+  margin-right: 3rem;
+}
+.tag__header-wrap a,
+.tag__header-wrap p {
+  font-size: 2rem;
+  line-height: 3.5rem;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  position: relative;
+}
+@media only screen and (min-width: 576px) {
+  .tag__header-wrap a,
+  .tag__header-wrap p {
+    font-size: calc(2rem + 4 * (100vw - 375px) / 625);
+  }
+}
+@media only screen and (min-width: 992px) {
+  .tag__header-wrap a,
+  .tag__header-wrap p {
+    font-size: 2.5rem;
+  }
+}
+.tag__header-wrap a:hover,
+.tag__header-wrap p:hover {
+  transform: scale(1.05);
+}

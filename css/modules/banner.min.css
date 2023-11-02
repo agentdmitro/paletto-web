@@ -1,0 +1,340 @@
+.banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  max-height: 97rem;
+}
+@media only screen and (max-width: 576px) {
+  .banner {
+    height: 43rem;
+    padding-top: 2.4rem;
+    padding-bottom: 0;
+  }
+}
+.banner-account {
+  height: auto;
+  max-height: unset;
+  min-height: 48rem !important;
+  background: #ffffff;
+}
+@media only screen and (max-width: 992px) {
+  .banner-account {
+    min-height: auto !important;
+    padding: 12rem 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .banner-account {
+    padding: 0;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+}
+.banner-account .container {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (min-width: 576px) {
+  .banner-account .container {
+    justify-content: center;
+  }
+}
+.banner-account__wrap {
+  width: max-content;
+}
+.banner-account h2 {
+  z-index: 3;
+}
+@media only screen and (min-width: 576px) {
+  .banner-account h2 {
+    color: #ffffff;
+  }
+}
+.banner-account .banner__bg {
+  background-position: center;
+  opacity: 0.8;
+  z-index: 1;
+}
+@media only screen and (max-width: 576px) {
+  .banner-account .banner__bg {
+    position: static;
+    width: 100%;
+    height: 10.4rem;
+    z-index: 1;
+  }
+}
+.banner.reg {
+  height: auto;
+  padding: 12rem 0;
+  max-height: none;
+}
+@media only screen and (max-width: 768px) {
+  .banner.reg {
+    padding: 8rem 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .banner.reg {
+    padding: 3rem 0;
+  }
+}
+.banner.login {
+  min-height: auto;
+  padding-bottom: 8.5rem;
+  align-items: start;
+}
+@media only screen and (min-width: 992px) {
+  .banner {
+    min-height: 96.4rem;
+  }
+}
+.banner__wrap {
+  height: 100%;
+}
+.banner__wrap p {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 576px) {
+  .banner__wrap p {
+    font-size: 1.4rem;
+    line-height: 1.75rem;
+    margin-top: 0.7rem;
+  }
+}
+.banner-slider {
+  height: 100%;
+  width: 100%;
+}
+.banner-slider .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.banner-pagination {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  right: 6.1rem;
+  bottom: 3rem;
+  transition: all 0.2s ease;
+}
+.banner-pagination span {
+  cursor: pointer;
+  color: #cecdc9;
+  opacity: 1;
+  font-size: 1.3rem;
+  transition: all 0.2s ease;
+}
+.banner-pagination span.swiper-pagination-bullet-active {
+  color: #909090;
+}
+.banner-pagination span:not(.swiper-pagination-bullet-active):hover {
+  color: #909090;
+}
+@media only screen and (max-width: 576px) {
+  .banner-pagination {
+    right: unset;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+  }
+}
+.banner__slide {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 576px) {
+  .banner__slide {
+    align-items: start;
+    text-align: center;
+  }
+}
+.banner__bg {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-width: 576px) {
+  .banner__bg {
+    background-position: 50% 0;
+  }
+}
+.banner-2 {
+  height: 100%;
+  min-height: 44.2rem;
+  max-height: 51.2rem;
+}
+.banner-2 .banner__wrap {
+  z-index: 2;
+}
+@media only screen and (max-width: 768px) {
+  .banner-2 {
+    background-color: #ffffff;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .banner-2 {
+    min-height: 20rem;
+    max-height: 20rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner-2 .banner__bg {
+    background-size: 100%;
+    background-position: right;
+    z-index: 1;
+  }
+}
+
+.breadcrumbs {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.9rem;
+}
+.breadcrumbs a,
+.breadcrumbs span {
+  font-size: 1.2rem;
+}
+.breadcrumbs a {
+  transition: all 0.2s ease;
+}
+.breadcrumbs a:hover {
+  color: #909090;
+}
+
+.reg__wrap {
+  margin: 3.8rem auto 0;
+  width: 80rem;
+  max-width: 100%;
+}
+@media only screen and (max-width: 576px) {
+  .reg__wrap {
+    margin-top: 2rem;
+  }
+}
+.reg__wrap form {
+  padding: 7.2rem;
+  padding-bottom: 4rem;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 576px) {
+  .reg__wrap form {
+    padding: 1.8rem;
+    padding-bottom: 1rem;
+  }
+}
+.reg__wrap form h5 {
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+}
+.reg__input-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .reg__input-row {
+    flex-direction: column;
+  }
+}
+.reg__input label {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  cursor: pointer;
+}
+.reg__input label p {
+  line-height: 100%;
+  font-size: 1.4rem;
+}
+.reg__input label input {
+  padding: 2.1rem 1.6rem !important;
+  font-size: 1.4rem;
+}
+@media (any-hover: hover) {
+  .reg__input label input:hover, .reg__input label input:focus {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+.reg__input + .reg__input {
+  margin-top: 2rem;
+}
+.reg__bttn {
+  width: 100%;
+  margin-top: 3rem;
+}
+.reg__footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+.reg__footer a {
+  font-size: 1.2rem;
+}
+.reg__footer a::after {
+  content: "";
+  position: absolute;
+  bottom: -0.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #050505;
+  height: 1px;
+  width: 0;
+  transition: all 0.2s ease;
+}
+.reg__footer a:hover::after {
+  width: 80%;
+}
+.reg__footer p {
+  text-align: left;
+  font-size: 1rem;
+  margin-top: 1.3rem;
+}
+
+.login__wrap {
+  width: 60rem;
+}
+
+.show__pass {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.2s ease;
+}
+
+.iti__flag-container {
+  position: relative;
+  padding: 0;
+  border: 1px solid #cecdc9;
+  border-right: none;
+  background: inherit;
+  transition: all 0.2s ease;
+}
+.iti__flag-container:hover {
+  background: #f3f4f1;
+}
+
+.iti--separate-dial-code .iti__selected-flag {
+  padding: 1rem;
+  background: inherit;
+}
+
+.iti {
+  height: auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}

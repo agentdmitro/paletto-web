@@ -1,0 +1,52 @@
+.related {
+  padding: 7.2rem 0;
+  background: #ffffff;
+}
+@media only screen and (max-width: 768px) {
+  .related {
+    padding: 3.2rem 0;
+  }
+}
+.related__slider {
+  padding: 0 4.8rem;
+  margin-top: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .related__slider {
+    margin-top: 2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .related h2 {
+    font-size: 3.4rem;
+  }
+}
+.related__slide {
+  width: 27.1rem;
+}
+@media only screen and (max-width: 576px) {
+  .related__slide {
+    width: 23.2rem;
+  }
+}
+.related .swiper-button-prev {
+  justify-content: start;
+}
+.related .swiper-button-next {
+  justify-content: flex-end;
+}
+.related .swiper-button-prev:hover,
+.related .swiper-button-next:hover {
+  box-shadow: none;
+}
+@media only screen and (max-width: 768px) {
+  .related .swiper-button-prev,
+  .related .swiper-button-next {
+    display: none;
+  }
+  .related__slider {
+    padding-left: 0;
+    padding-right: -1.5rem;
+    margin-right: -1.5rem;
+  }
+}

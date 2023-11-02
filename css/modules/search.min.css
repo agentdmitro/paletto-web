@@ -1,0 +1,109 @@
+.search__header {
+  padding: 2.4rem 0;
+  border-bottom: 1px solid #cecdc9;
+}
+@media only screen and (max-width: 768px) {
+  .search__header {
+    padding: 0;
+  }
+  .search__header .container {
+    padding: 0;
+  }
+}
+.search__header input {
+  padding: 2rem 4.8rem;
+  padding-right: 9.6rem;
+  font-size: 3.4rem;
+  background: inherit;
+  border: none;
+}
+.search__header input::placeholder {
+  font-size: 3.4rem;
+  color: #a0aec0;
+}
+@media only screen and (max-width: 768px) {
+  .search__header input {
+    padding-left: 2rem;
+    padding-right: 5.2rem;
+  }
+}
+.search__remove {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 3.4rem;
+  height: 6rem;
+  width: 6rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media only screen and (max-width: 768px) {
+  .search__remove {
+    right: 0rem;
+  }
+}
+.search__wrap + h4 {
+  margin-top: 3.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .search__wrap + h4 {
+    margin-top: 2rem;
+  }
+}
+.search h4 {
+  padding-left: 4.8rem;
+}
+@media only screen and (max-width: 768px) {
+  .search h4 {
+    padding: 0;
+  }
+}
+.search__slider {
+  padding: 0 4.8rem;
+}
+.search__slide {
+  max-width: 17.7rem;
+}
+.search .swiper-button-prev {
+  justify-content: start;
+}
+.search .swiper-button-next {
+  justify-content: flex-end;
+}
+.search .swiper-button-prev:hover,
+.search .swiper-button-next:hover {
+  box-shadow: none;
+}
+.search .swiper-button-prev,
+.search .swiper-button-next {
+  width: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  height: 100%;
+  border-radius: 0;
+}
+.search .swiper-button-prev:hover,
+.search .swiper-button-next:hover {
+  background: #d9d9d9;
+}
+.search .product__item img {
+  min-height: 22.1rem;
+}
+.search .product__item-img {
+  margin-bottom: 1.5rem;
+}
+@media only screen and (max-width: 768px) {
+  .search .swiper-button-prev,
+  .search .swiper-button-next {
+    display: none;
+  }
+  .search__slider {
+    padding-left: 0;
+    padding-right: -1.5rem;
+    margin-right: -1.5rem;
+  }
+}

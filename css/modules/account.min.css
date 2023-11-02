@@ -1,0 +1,79 @@
+.account {
+  background: #ffffff;
+}
+.account .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+@media only screen and (max-width: 576px) {
+  .account .container {
+    flex-direction: column;
+  }
+}
+.account h6 {
+  font-weight: 400;
+}
+.account__menu {
+  width: 20.8rem;
+  max-width: 100%;
+}
+.account__menu h6 {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+}
+.account__menu h6 svg,
+.account__menu h6 path {
+  transition: all 0.2s ease;
+}
+.account__menu h6:hover svg {
+  transform: translateX(0.2rem);
+}
+.account__menu ul {
+  margin-top: 2rem;
+}
+.account__menu ul li a {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  transition: all 0.2s ease;
+  display: flex;
+}
+.account__menu ul li a:hover {
+  background: #fbf9f7;
+}
+.account__wrap {
+  width: 82.4rem;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.account__item-header {
+  padding: 1.8rem 0;
+  border-bottom: 1px solid #cecdc9;
+}
+.account__item-header h5 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.account__item-products {
+  margin-top: 2.4rem;
+}
+.account__item-products .product__item-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 32.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .account__item-products .product__item-img {
+    min-height: 30rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .account__item-products .product__item-img {
+    min-height: 25rem;
+  }
+}

@@ -1,0 +1,65 @@
+.diagnosis {
+  background-image: url(../img/diagnosis/1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 10rem 0;
+  min-height: 58rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+  .diagnosis {
+    align-items: flex-end;
+  }
+}
+.diagnosis .container {
+  padding-top: 7rem;
+}
+@media only screen and (min-width: 992px) {
+  .diagnosis {
+    min-height: 768px;
+  }
+}
+.diagnosis h6 {
+  text-transform: uppercase;
+  line-height: 160%;
+}
+.diagnosis h4 {
+  color: #ffffff;
+  max-width: 60.6rem;
+  margin: 5rem auto 0;
+}
+@media only screen and (max-width: 576px) {
+  .diagnosis h4 {
+    margin-top: 2rem;
+  }
+}
+.diagnosis a {
+  display: inline-flex;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07rem;
+  line-height: 107%;
+  font-size: 1.3rem;
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0);
+  transition: all 0.2s ease;
+}
+.diagnosis a:hover {
+  border-color: #cecdc9;
+  background: #ffffff;
+}
+@media only screen and (max-width: 992px) {
+  .diagnosis a {
+    border-color: #cecdc9;
+    background: #ffffff;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .diagnosis a {
+    margin-top: 3rem;
+  }
+}
